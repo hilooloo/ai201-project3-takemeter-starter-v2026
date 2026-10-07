@@ -44,7 +44,6 @@
 ## What This Does
 
 This classifier analyzes and categorizes public discussion posts from Reddit's `r/datascience` community. The forum features a heavy mix of rigorous technical advice, provocative unverified career claims, and emotional venting about the job market. The model filters signal from noise by classifying posts into three distinct categories: `analysis` (substantive, evidence-backed arguments), `hot_take` (strong, unsupported claims), and `reaction` (affective, sentiment-driven responses).
-
 ### Candidate Distinctions Observed
 1. **Specific Metrics & Reproducible Artifacts:** Some posts cite concrete numbers, sample sizes, benchmark latency, or lines of code, while most posts make broad generalizations without supporting data.
 2. **Empirical Methodology vs. Unsubstantiated Opinion:** Some posts walk through step-by-step problem-solving workflows and experimental setups, whereas others declare sweeping industry conclusions without explaining how they reached them.
@@ -62,24 +61,36 @@ This classifier analyzes and categorizes public discussion posts from Reddit's `
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
 ### `label_one`
+### `analysis`
 
-**Definition:**
+**Definition:** Makes a substantive argument or technical claim supported by specific, checkable empirical facts, code snippets, reproducible methodology, or concrete metrics.
 
 **Example 1:**
->
+> Ran a 5-fold cross-validation comparing LightGBM against a tuned Random Forest on 120k tabular records; LightGBM showed a 0.04 AUC improvement while reducing training latency by 42%.
 
 **Example 2:**
->
+> If you evaluate model drift using Population Stability Index (PSI), set a threshold of 0.25 for major shift and 0.1 for moderate shift; our production monitoring caught pipeline degradation before downstream metrics dropped.
 
 ### `label_two`
+### `hot_take`
 
-**Definition:**
+**Definition:** Expresses a confident, definitive claim, prediction, or provocative opinion about tools, careers, or the industry without offering verifiable empirical evidence, supporting calculations, or reproducible methodology.
 
 **Example 1:**
->
+> Data analysts will be completely obsolete within two years because modern LLM agents can write error-free SQL and build dashboards automatically.
 
 **Example 2:**
->
+> Learning R in 2026 is an absolute waste of time; Python and Polars have completely solved tabular manipulation and nobody in production uses CRAN packages anymore.
+
+### `reaction`
+
+**Definition:** Expresses an immediate emotional, affective, or visceral sentiment—such as venting frustration, anxiety, celebration, or exhaustion—about the job hunt, workplace dynamics, or industry news, without advancing a structured argument.
+
+**Example 1:**
+> I just got rejected from my 150th data science application after five rounds of interviews and a take-home exam; I am completely burnt out and ready to quit tech.
+
+**Example 2:**
+> Finally signed an offer for a Senior Data Scientist role after eight grueling months of unemployment, and I cannot stop crying happy tears!
 
 ### The hardest boundary
 
@@ -88,7 +99,7 @@ This classifier analyzes and categorizes public discussion posts from Reddit's `
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
-
+If the post cites at least one specific, checkable technical metric, empirical benchmark figure, reproducible calculation, or concrete artifact, it is classified as `analysis`, even if the tone is opinionated or heated; otherwise, if it makes sweeping assertive claims without empirical verification, it is classified as `hot_take`.
 
 
 ---
