@@ -45,6 +45,11 @@
 
 This classifier analyzes and categorizes public discussion posts from Reddit's `r/datascience` community. The forum features a heavy mix of rigorous technical advice, provocative unverified career claims, and emotional venting about the job market. The model filters signal from noise by classifying posts into three distinct categories: `analysis` (substantive, evidence-backed arguments), `hot_take` (strong, unsupported claims), and `reaction` (affective, sentiment-driven responses).
 
+### Candidate Distinctions Observed
+1. **Specific Metrics & Reproducible Artifacts:** Some posts cite concrete numbers, sample sizes, benchmark latency, or lines of code, while most posts make broad generalizations without supporting data.
+2. **Empirical Methodology vs. Unsubstantiated Opinion:** Some posts walk through step-by-step problem-solving workflows and experimental setups, whereas others declare sweeping industry conclusions without explaining how they reached them.
+3. **Emotional Affect & Venting vs. Neutral Information:** Many posts are immediate sentiment-driven reactions characterized by affective punctuation, career anxiety, or rants, contrasting with calm, purely descriptive technical sharing.
+
 
 ---
 
