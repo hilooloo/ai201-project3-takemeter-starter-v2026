@@ -1,0 +1,201 @@
+text,label,note
+"SHAP on our LightGBM model showed support_tickets accounts for 34% of mean |SHAP|. Dropping the top-5 correlated features (VIF > 8) changed AUC by only 0.002, so I removed them to simplify the model.",analysis,pre-labeled: describes a reproducible method
+The title 'data scientist' will be gone by 2030. It will all be analytics engineer.,hot_take,pre-labeled: provocative opinion without evidence
+"Honestly, A/B testing are mostly theater. Leadership decides first and then asks us to justify it.",hot_take,pre-labeled: provocative opinion without evidence
+Hot take: neural nets is overkill for 95% business problems and everyone knows a simple heuristic wins.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Another PM asked me for 'just a quick dashboard' that took a month. I am so fed up.,reaction,"cold: personal sentiment, no argument"
+Hit 3 years at my company today and they gave me a handshake. Wow I need a new job.,reaction,"cold: personal sentiment, no argument"
+Burnout is real. Third week in a row working weekends and nobody even noticed. Feeling pretty numb.,reaction,pre-labeled: emotional job-search vent
+90% of data scientist roles will be replaced by analysts with Copilot within five years. Mark my words.,hot_take,"pre-labeled: confident industry claim, unverified"
+"Prediction: time series forecasting will be the only valuable skill, and everyone who ignores it is going to get left behind.",hot_take,"pre-labeled: sweeping prediction, no data"
+Burnout is real. Second week in a row working weekends and nobody even noticed. Feeling pretty defeated.,reaction,"pre-labeled: personal sentiment, no argument"
+Finally passed the Azure DP-100 cert today! Feeling amazing after all that of studying.,reaction,pre-labeled: milestone celebration
+Burnout is real. Third week in a row working weekends and nobody even noticed. Feeling pretty defeated.,reaction,pre-labeled: workplace frustration
+Nobody actually needs a MLOps platform. It is resume-driven development.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Switching our pandas groupby-apply to a vectorized merge + cumsum version cut the feature pipeline from 2.5 hours to 3 minutes on 40M rows. Profiling with cProfile showed the apply lambda was 91% of runtime.,analysis,pre-labeled: cites concrete metrics and sample sizes
+"We ran an A/B test with 38,000 users per arm over 21 days. Lift in conversion was 1.8% with a p-value of 0.008. Power analysis at 80% needed roughly 9k per arm, so we were adequately powered.",analysis,pre-labeled: describes a reproducible method
+Our Airflow job was timing out. Repartitioning from 2000 to 512 partitions and broadcasting the 300MB lookup table dropped wall-clock from 31 min to 7 min. Shuffle spill went to near zero according to the Spark UI.,analysis,pre-labeled: reports benchmark or latency numbers
+Today my first model went to production and it is actually working. I am so relieved.,reaction,pre-labeled: workplace frustration
+"We ran an A/B test with 7,800 users per arm over 21 days. Lift in conversion was 1.8% with a p-value of 0.047. Power analysis at 80% needed roughly 74k per arm, so we were underpowered and I would not trust it.",analysis,pre-labeled: cites concrete metrics and sample sizes
+Switching our pandas groupby-apply to a vectorized polars lazy version cut the feature pipeline from 73 minutes to 11 minutes on 12M rows. Profiling with cProfile showed the apply lambda was 82% of runtime.,analysis,pre-labeled: describes a reproducible method
+"Cleaning notes: 6.3% of rows had null income. Median imputation vs a iterative imputer changed downstream AUC by 0.003 over 5-fold CV, which is within the fold-to-fold std of 0.009.",analysis,pre-labeled: gives code-level technique with results
+A PhD is worthless now for breaking into data science. Change my mind.,hot_take,"pre-labeled: sweeping prediction, no data"
+Another stakeholder asked me for 'just a quick dashboard' that took two weeks. I am so exhausted.,reaction,pre-labeled: emotional job-search vent
+"Quick breakdown of our demand forecast model: n=52,000 observations, MAPE of 11.4% on a time-based holdout of the last 8 weeks. A seasonal naive baseline got 1.22, so the gain is real but modest.",analysis,pre-labeled: gives code-level technique with results
+Applied to 90 jobs and got zero interviews. This market is brutal and I am so tired.,reaction,pre-labeled: emotional job-search vent
+Today my second model went to production and it is actually working. I am so excited.,reaction,pre-labeled: milestone celebration
+"For anyone doing time series CV: use expanding windows, not random k-fold. With 8 folds on 5 years of daily data our random-split RMSE was 4.1 but the walk-forward RMSE was 6.8. The first number was leakage from adjacent days.",analysis,pre-labeled: reports benchmark or latency numbers
+"Ran a bootstrap with 1000 resamples to get CIs on the median difference. The 95% interval was [0.3, 1.8], so it excludes zero, which supports the effect. A t-test would have misled us because the data is heavily right-skewed (skew = 4.7).",analysis,pre-labeled: gives code-level technique with results
+"Cleaning notes: 17% of rows had null income. Median imputation vs a iterative imputer changed downstream AUC by 0.003 over 5-fold CV, which is within the fold-to-fold std of 0.012.",analysis,pre-labeled: describes a reproducible method
+Switching our pandas groupby-apply to a vectorized merge + cumsum version cut the feature pipeline from 41 minutes to 11 minutes on 200M rows. Profiling with cProfile showed the apply lambda was 67% of runtime.,analysis,pre-labeled: cites concrete metrics and sample sizes
+"Embedding comparison on 12,000 labeled support tickets: TF-IDF + logistic regression hit 0.76 macro-F1 while a fine-tuned DistilBERT got 0.88. GPU inference cost $1.10 per 1k tickets versus effectively zero for TF-IDF.",analysis,pre-labeled: gives code-level technique with results
+Just got an offer for my first data scientist role after 5 months of searching!! I cannot believe it. Thank you to everyone on this sub who helped with my resume.,reaction,pre-labeled: emotional job-search vent
+Leetcode tells you nothing about whether someone can do the job. Companies that use it deserve the hires they get.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Most data scientist roles will be replaced by LLM agents within two years. Mark my words.,hot_take,pre-labeled: provocative opinion without evidence
+"Honestly, A/B testing are useless. Leadership decides first and then asks us to rubber-stamp it.",hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Hot take: transformers is overkill for the vast majority of business problems and everyone knows a simple heuristic wins.,hot_take,"pre-labeled: confident industry claim, unverified"
+Imposter syndrome hit hard today after a senior colleague asked me what a p-value was in front of everyone. Anyone else feel like this?,reaction,pre-labeled: workplace frustration
+"Got a 30% raise after switching jobs and honestly I am still in shock. Hang in there everyone, it can happen!",reaction,pre-labeled: emotional job-search vent
+"Honestly, p-values are mostly theater. Leadership decides first and then asks us to justify it.",hot_take,"pre-labeled: sweeping prediction, no data"
+"Ran a bootstrap with 5000 resamples to get CIs on the median difference. The 95% interval was [-1.1, 0.7], so it crosses zero and we cannot claim an effect. A t-test would have misled us because the data is heavily right-skewed (skew = 3.2).",analysis,pre-labeled: reports benchmark or latency numbers
+"Cleaning notes: 2.8% of rows had null income. Median imputation vs a iterative imputer changed downstream AUC by 0.003 over 5-fold CV, which is within the fold-to-fold std of 0.006.",analysis,pre-labeled: reports benchmark or latency numbers
+"Prediction: Bayesian methods will be the most valuable skill, and everyone who ignores it is going to get left behind.",hot_take,"pre-labeled: sweeping prediction, no data"
+Another stakeholder asked me for 'just a quick dashboard' that took a month. I am so done with this place.,reaction,pre-labeled: emotional job-search vent
+Applied to 300 jobs and got zero interviews. This market is brutal and I am so tired.,reaction,pre-labeled: workplace frustration
+"Prediction: time series forecasting will be the next big skill, and everyone who ignores it is going to get left behind.",hot_take,"pre-labeled: confident industry claim, unverified"
+Our Spark job was timing out. Repartitioning from 2000 to 128 partitions and broadcasting the 300MB lookup table dropped wall-clock from 2h to 24 min. Shuffle spill went to near zero according to the Spark UI.,analysis,pre-labeled: reports benchmark or latency numbers
+Just got an offer for my first data scientist role after 14 months of searching!! I cannot believe it. Thank you to everyone on this sub who helped with my resume.,reaction,"cold: personal sentiment, no argument"
+"Ran a bootstrap with 1000 resamples to get CIs on the median difference. The 95% interval was [0.6, 3.4], so it crosses zero and we cannot claim an effect. A t-test would have misled us because the data is heavily right-skewed (skew = 2.8).",analysis,cold: gives code-level technique with results
+Just got an offer for my first data scientist role after 8 months of searching!! I cannot believe it. Thank you to everyone on this sub who helped with my resume.,reaction,pre-labeled: workplace frustration
+The title 'data scientist' will be gone by 2032. It will all be analytics engineer.,hot_take,"pre-labeled: sweeping prediction, no data"
+Just defended my PhD! Data science here I come. So grateful and a little terrified.,reaction,pre-labeled: milestone celebration
+"If you are seeing data leakage, check whether you fit your StandardScaler before the train/test split. In our case that alone inflated test R^2 from 0.61 to 0.78. Wrapping everything in a sklearn Pipeline fixed it.",analysis,cold: gives code-level technique with results
+Today my third model went to production and it is actually working. I am so proud of myself.,reaction,pre-labeled: milestone celebration
+"For anyone doing time series CV: use expanding windows, not random k-fold. With 3 folds on 2 years of daily data our random-split RMSE was 4.1 but the walk-forward RMSE was 7.4. The first number was leakage from adjacent days.",analysis,pre-labeled: cites concrete metrics and sample sizes
+Every company that hires a data scientist before a data engineer is doomed. Fight me.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Applied to 150 jobs and got zero interviews. This market is brutal and I am so tired.,reaction,"pre-labeled: personal sentiment, no argument"
+"Class imbalance was 1:45 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.41. Calibration (Brier score 0.018) was also better without resampling.",analysis,pre-labeled: cites concrete metrics and sample sizes
+"Benchmarked XGBoost vs a random forest on 120k rows with 112 features. 5-fold CV AUC was 0.846 vs 0.880, but inference latency went from 9ms to 38ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: gives code-level technique with results
+Another PM asked me for 'just a quick dashboard' that took all sprint. I am so over it.,reaction,pre-labeled: workplace frustration
+"Benchmarked CatBoost vs a 2-layer MLP on 480k rows with 240 features. 5-fold CV AUC was 0.871 vs 0.853, but inference latency went from 9ms to 55ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: describes a reproducible method
+Today my first model went to production and it is actually working. I am so excited.,reaction,pre-labeled: workplace frustration
+"Embedding comparison on 30,000 labeled support tickets: TF-IDF + logistic regression hit 0.76 macro-F1 while a fine-tuned BERT-base got 0.84. GPU inference cost $2.30 per 1k tickets versus effectively zero for TF-IDF.",analysis,pre-labeled: gives code-level technique with results
+Our dbt job was timing out. Repartitioning from 64 to 128 partitions and broadcasting the 300MB lookup table dropped wall-clock from 52 min to 9 min. Shuffle spill went to near zero according to the Spark UI.,analysis,pre-labeled: gives code-level technique with results
+"Quick breakdown of our recommendation model: n=310,000 observations, MAPE of 11.4% on a time-based holdout of the last 8 weeks. A seasonal naive baseline got 4.1 units, so the gain is real but modest.",analysis,pre-labeled: gives code-level technique with results
+A masters degree is the only thing that matters for breaking into data science. Change my mind.,hot_take,"pre-labeled: confident industry claim, unverified"
+"We ran an A/B test with 96,500 users per arm over 21 days. Lift in conversion was 1.8% with a p-value of 0.008. Power analysis at 80% needed roughly 74k per arm, so we were underpowered and I would not trust it.",analysis,cold: reports benchmark or latency numbers
+Every team that hires a data scientist before a data engineer is doomed. Fight me.,hot_take,"pre-labeled: sweeping prediction, no data"
+"Benchmarked CatBoost vs a logistic regression on 480k rows with 112 features. 5-fold CV AUC was 0.871 vs 0.897, but inference latency went from 12ms to 38ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: reports benchmark or latency numbers
+"Quick breakdown of our churn model: n=52,000 observations, RMSE of 3.2 units on a time-based holdout of the last 12 weeks. A seasonal naive baseline got 1.22, so the gain is real but modest.",analysis,pre-labeled: gives code-level technique with results
+"Honestly, dashboards are useless. Leadership decides first and then asks us to find the numbers.",hot_take,"cold: sweeping prediction, no data"
+Imposter syndrome hit hard today after a senior colleague tore apart my code review. Anyone else feel like this?,reaction,"pre-labeled: personal sentiment, no argument"
+Take-home assignments is a terrible signal about whether someone can do the job. Companies that use it deserve the hires they get.,hot_take,"cold: sweeping prediction, no data"
+"For anyone doing time series CV: use expanding windows, not random k-fold. With 5 folds on 5 years of daily data our random-split RMSE was 5.2 but the walk-forward RMSE was 7.4. The first number was leakage from adjacent days.",analysis,pre-labeled: reports benchmark or latency numbers
+"For anyone doing time series CV: use expanding windows, not random k-fold. With 5 folds on 2 years of daily data our random-split RMSE was 5.2 but the walk-forward RMSE was 7.4. The first number was leakage from adjacent days.",analysis,pre-labeled: cites concrete metrics and sample sizes
+Today my first model went to production and it is actually working. I am so happy I could cry lol.,reaction,pre-labeled: milestone celebration
+"Class imbalance was 1:200 in our fraud set. SMOTE gave PR-AUC 0.31, while simply using class weights and tuning the threshold got 0.39. Calibration (Brier score 0.018) was also better without resampling.",analysis,pre-labeled: reports benchmark or latency numbers
+Hit 1 year at my company today and they gave me a handshake. Ha I need a new job.,reaction,"cold: personal sentiment, no argument"
+Nobody actually needs a data lake. It is a solution looking for a problem.,hot_take,pre-labeled: provocative opinion without evidence
+Nobody actually needs a MLOps platform. It is a solution looking for a problem.,hot_take,"pre-labeled: sweeping prediction, no data"
+Hit 3 years at my company today and they gave me a gift card. Lol I need a new job.,reaction,pre-labeled: emotional job-search vent
+"Quick breakdown of our demand forecast model: n=52,000 observations, RMSE of 3.2 units on a time-based holdout of the last 8 weeks. A seasonal naive baseline got 1.22, so the gain is real but modest.",analysis,pre-labeled: describes a reproducible method
+"Prediction: causal inference will be the only valuable skill, and everyone who ignores it is going to get left behind.",hot_take,"cold: confident industry claim, unverified"
+"Quick breakdown of our demand forecast model: n=310,000 observations, MAPE of 11.4% on a time-based holdout of the last 16 weeks. A seasonal naive baseline got 1.22, so the gain is real but modest.",analysis,pre-labeled: describes a reproducible method
+Every startup that hires a data scientist before a data engineer is wasting money. Fight me.,hot_take,"pre-labeled: confident industry claim, unverified"
+"Class imbalance was 3:97 in our fraud set. SMOTE gave PR-AUC 0.35, while simply using class weights and tuning the threshold got 0.41. Calibration (Brier score 0.034) was also better without resampling.",analysis,pre-labeled: gives code-level technique with results
+Finally passed the Azure DP-100 cert today! Feeling amazing after weeks of studying.,reaction,"pre-labeled: personal sentiment, no argument"
+Got ghosted after the take-home again. Honestly just needed to vent somewhere that gets it.,reaction,"pre-labeled: personal sentiment, no argument"
+Finally passed the GCP data engineer cert today! Feeling amazing after weeks of studying.,reaction,pre-labeled: workplace frustration
+Just defended my masters thesis! Data science here I come. So proud and a little terrified.,reaction,pre-labeled: milestone celebration
+Another PM asked me for 'just a quick dashboard' that took two weeks. I am so over it.,reaction,pre-labeled: milestone celebration
+"Embedding comparison on 30,000 labeled support tickets: TF-IDF + logistic regression hit 0.82 macro-F1 while a fine-tuned DistilBERT got 0.84. GPU inference cost $2.30 per 1k tickets versus effectively zero for TF-IDF.",analysis,pre-labeled: describes a reproducible method
+Burnout is real. Second week in a row working weekends and nobody even noticed. Feeling pretty hopeless.,reaction,pre-labeled: emotional job-search vent
+Unpopular opinion: SQL is dead and anyone still choosing otherwise is stuck in 2015.,hot_take,"pre-labeled: sweeping prediction, no data"
+Hit 3 years at my company today and they gave me a sticker. Ha I need a new job.,reaction,"pre-labeled: personal sentiment, no argument"
+Statistics no longer matters in this field. Interviewers just want people who can ship.,hot_take,"pre-labeled: sweeping prediction, no data"
+"Honestly, p-values are just corporate cargo cult. Leadership decides first and then asks us to rubber-stamp it.",hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Hot take: deep learning is overkill for 95% business problems and everyone knows logistic regression wins.,hot_take,"pre-labeled: confident industry claim, unverified"
+Applied to 300 jobs and got two interviews. This market is brutal and I am so tired.,reaction,pre-labeled: emotional job-search vent
+Hot take: deep learning is overkill for the vast majority of business problems and everyone knows a GBM wins.,hot_take,pre-labeled: provocative opinion without evidence
+Most data scientist roles will be replaced by AutoML within five years. Mark my words.,hot_take,"pre-labeled: confident industry claim, unverified"
+Finally passed the AWS ML specialty cert today! Feeling amazing after two months of studying.,reaction,pre-labeled: workplace frustration
+Jupyter notebooks poisoned the quality of data science teams. Real engineers write scripts in an IDE.,hot_take,pre-labeled: provocative opinion without evidence
+Hit 3 years at my company today and they gave me a gift card. Wow I need a new job.,reaction,pre-labeled: workplace frustration
+Just got an offer for my first data scientist role after 11 months of searching!! I cannot believe it. Thank you to everyone on this sub who helped with my resume.,reaction,pre-labeled: workplace frustration
+Today my third model went to production and it is actually working. I am so excited.,reaction,"pre-labeled: personal sentiment, no argument"
+The title 'data scientist' will be gone by 2028. It will all be prompt engineer.,hot_take,"pre-labeled: sweeping prediction, no data"
+Applied to 400 jobs and got one interviews. This market is brutal and I am so tired.,reaction,pre-labeled: workplace frustration
+Switching our pandas groupby-apply to a vectorized merge + cumsum version cut the feature pipeline from 18 minutes to 6 minutes on 200M rows. Profiling with cProfile showed the apply lambda was 67% of runtime.,analysis,pre-labeled: gives code-level technique with results
+Nobody actually needs a vector database. It is pure vendor hype.,hot_take,pre-labeled: provocative opinion without evidence
+The title 'data scientist' will be gone by 2028. It will all be ML engineer.,hot_take,"pre-labeled: confident industry claim, unverified"
+Hit 2 years at my company today and they gave me a gift card. Lol I need a new job.,reaction,pre-labeled: milestone celebration
+"Class imbalance was 1:200 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.39. Calibration (Brier score 0.021) was also better without resampling.",analysis,pre-labeled: describes a reproducible method
+Burnout is real. Second week in a row working weekends and nobody even noticed. Feeling pretty drained.,reaction,pre-labeled: workplace frustration
+Unpopular opinion: Python is the only language you need and anyone still choosing otherwise is stuck in 2015.,hot_take,"pre-labeled: confident industry claim, unverified"
+Nobody actually needs a vector database. It is a solution looking for a problem.,hot_take,cold: dismisses a tool or role with no benchmark
+"Honestly, A/B testing are just corporate cargo cult. Leadership decides first and then asks us to justify it.",hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Every company that hires a data scientist before a data engineer is wasting money. Fight me.,hot_take,cold: dismisses a tool or role with no benchmark
+"Honestly, p-values are mostly theater. Leadership decides first and then asks us to rubber-stamp it.",hot_take,"pre-labeled: sweeping prediction, no data"
+"SHAP on our LightGBM model showed support_tickets accounts for 34% of mean |SHAP|. Dropping the top-3 correlated features (VIF > 10) changed AUC by only 0.004, so I removed them to simplify the model.",analysis,pre-labeled: reports benchmark or latency numbers
+Today my first model went to production and it is actually working. I am so proud of myself.,reaction,pre-labeled: workplace frustration
+Every startup that hires a data scientist before a data engineer is setting itself up to fail. Fight me.,hot_take,cold: provocative opinion without evidence
+Our Airflow job was timing out. Repartitioning from 64 to 512 partitions and broadcasting the 120MB lookup table dropped wall-clock from 52 min to 9 min. Shuffle spill went to near zero according to the Spark UI.,analysis,pre-labeled: describes a reproducible method
+"Got a 20% raise after switching jobs and honestly I am still in shock. Hang in there everyone, it can happen!",reaction,"pre-labeled: personal sentiment, no argument"
+Kaggle is a terrible signal about whether someone can do the job. Companies that use it deserve the hires they get.,hot_take,"pre-labeled: confident industry claim, unverified"
+"Cleaning notes: 17% of rows had null income. Median imputation vs a KNN imputer changed downstream AUC by 0.007 over 5-fold CV, which is within the fold-to-fold std of 0.012.",analysis,pre-labeled: gives code-level technique with results
+Leetcode is a terrible signal about whether someone can do the job. Companies that use it deserve the hires they get.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+"Ran a bootstrap with 10000 resamples to get CIs on the median difference. The 95% interval was [-0.4, 2.9], so it crosses zero and we cannot claim an effect. A t-test would have misled us because the data is heavily right-skewed (skew = 2.8).",analysis,pre-labeled: describes a reproducible method
+Another stakeholder asked me for 'just a quick dashboard' that took two weeks. I am so fed up.,reaction,"pre-labeled: personal sentiment, no argument"
+"Benchmarked CatBoost vs a logistic regression on 480k rows with 30 features. 5-fold CV AUC was 0.846 vs 0.880, but inference latency went from 12ms to 71ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: describes a reproducible method
+Every company that hires a data scientist before a data engineer is setting itself up to fail. Fight me.,hot_take,"pre-labeled: sweeping prediction, no data"
+Finally passed the GCP data engineer cert today! Feeling amazing after two months of studying.,reaction,pre-labeled: emotional job-search vent
+Applied to 400 jobs and got two interviews. This market is brutal and I am so tired.,reaction,"pre-labeled: personal sentiment, no argument"
+"SHAP on our LightGBM model showed last_login_days accounts for 41% of mean |SHAP|. Dropping the top-5 correlated features (VIF > 8) changed AUC by only 0.001, so I removed them to simplify the model.",analysis,cold: describes a reproducible method
+"We ran an A/B test with 7,800 users per arm over 28 days. Lift in conversion was 0.9% with a p-value of 0.12. Power analysis at 80% needed roughly 11k per arm, so we were underpowered and I would not trust it.",analysis,cold: reports benchmark or latency numbers
+Our Airflow job was timing out. Repartitioning from 200 to 800 partitions and broadcasting the 45MB lookup table dropped wall-clock from 52 min to 9 min. Shuffle spill went to near zero according to the Spark UI.,analysis,pre-labeled: reports benchmark or latency numbers
+Just defended my capstone! Data science here I come. So relieved and a little terrified.,reaction,pre-labeled: emotional job-search vent
+"Honestly, A/B testing are just corporate cargo cult. Leadership decides first and then asks us to find the numbers.",hot_take,"pre-labeled: sweeping prediction, no data"
+Hit 3 years at my company today and they gave me a gift card. Ha I need a new job.,reaction,"pre-labeled: personal sentiment, no argument"
+"Cleaning notes: 6.3% of rows had null signup_date. Median imputation vs a KNN imputer changed downstream AUC by 0.003 over 10-fold CV, which is within the fold-to-fold std of 0.012.",analysis,pre-labeled: describes a reproducible method
+Hit 2 years at my company today and they gave me a handshake. Ha I need a new job.,reaction,pre-labeled: workplace frustration
+Unpopular opinion: SQL is overrated and anyone still choosing otherwise is just gatekeeping.,hot_take,"pre-labeled: sweeping prediction, no data"
+Burnout is real. Fourth week in a row working weekends and nobody even noticed. Feeling pretty hopeless.,reaction,pre-labeled: milestone celebration
+"If you are seeing data leakage, check whether you fit your target encoder before the train/test split. In our case that alone inflated test R^2 from 0.61 to 0.78. Wrapping everything in a sklearn Pipeline fixed it.",analysis,pre-labeled: gives code-level technique with results
+Today my third model went to production and it is actually working. I am so happy I could cry lol.,reaction,"cold: personal sentiment, no argument"
+Hit 2 years at my company today and they gave me a sticker. Lol I need a new job.,reaction,pre-labeled: milestone celebration
+Burnout is real. Fourth week in a row working weekends and nobody even noticed. Feeling pretty numb.,reaction,"pre-labeled: personal sentiment, no argument"
+Hot take: neural nets is overkill for almost all business problems and everyone knows logistic regression wins.,hot_take,"pre-labeled: confident industry claim, unverified"
+"We ran an A/B test with 38,000 users per arm over 14 days. Lift in conversion was 3.1% with a p-value of 0.008. Power analysis at 80% needed roughly 9k per arm, so we were adequately powered.",analysis,pre-labeled: gives code-level technique with results
+Got ghosted after the final round again. Honestly just needed to vent somewhere that gets it.,reaction,pre-labeled: milestone celebration
+Another PM asked me for 'just a quick dashboard' that took two weeks. I am so fed up.,reaction,"pre-labeled: personal sentiment, no argument"
+My manager just told me our team is being reorganized again. I do not even know how to feel right now.,reaction,cold: workplace frustration
+Kaggle have ruined the quality of data science teams. Real engineers write scripts in an IDE.,hot_take,pre-labeled: provocative opinion without evidence
+A bootcamp certificate is the only thing that matters for breaking into data science. Change my mind.,hot_take,"pre-labeled: sweeping prediction, no data"
+"Benchmarked LightGBM vs a random forest on 850k rows with 30 features. 5-fold CV AUC was 0.902 vs 0.880, but inference latency went from 4ms to 38ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: reports benchmark or latency numbers
+Kaggle poisoned the quality of data science teams. Real engineers write modules and tests.,hot_take,"pre-labeled: confident industry claim, unverified"
+Hot take: transformers is overkill for 95% business problems and everyone knows a simple heuristic wins.,hot_take,"pre-labeled: sweeping prediction, no data"
+Our Airflow job was timing out. Repartitioning from 200 to 800 partitions and broadcasting the 300MB lookup table dropped wall-clock from 52 min to 9 min. Shuffle spill went to near zero according to the Spark UI.,analysis,pre-labeled: gives code-level technique with results
+The title 'data scientist' will be gone by 2030. It will all be prompt engineer.,hot_take,"cold: confident industry claim, unverified"
+Hot take: transformers is overkill for almost all business problems and everyone knows a GBM wins.,hot_take,"pre-labeled: sweeping prediction, no data"
+"Benchmarked CatBoost vs a random forest on 2.3M rows with 64 features. 5-fold CV AUC was 0.846 vs 0.831, but inference latency went from 4ms to 38ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: reports benchmark or latency numbers
+Kaggle is the best predictor about whether someone can do the job. Companies that use it deserve the hires they get.,hot_take,"pre-labeled: confident industry claim, unverified"
+"Embedding comparison on 30,000 labeled support tickets: TF-IDF + logistic regression hit 0.76 macro-F1 while a fine-tuned BERT-base got 0.88. GPU inference cost $1.10 per 1k tickets versus effectively zero for TF-IDF.",analysis,pre-labeled: gives code-level technique with results
+Hit 1 year at my company today and they gave me a mug. Seriously I need a new job.,reaction,pre-labeled: emotional job-search vent
+My manager just told me our team is being laid off. I do not even know how to feel right now.,reaction,pre-labeled: emotional job-search vent
+Statistics no longer matters in this field. Hiring managers just want people who can ship.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+"Honestly, p-values are useless. Leadership decides first and then asks us to rubber-stamp it.",hot_take,pre-labeled: dismisses a tool or role with no benchmark
+"Prediction: Bayesian methods will be the only valuable skill, and everyone who ignores it is going to get left behind.",hot_take,pre-labeled: provocative opinion without evidence
+"Class imbalance was 1:45 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.39. Calibration (Brier score 0.021) was also better without resampling.",analysis,pre-labeled: gives code-level technique with results
+Today my second model went to production and it is actually working. I am so proud of myself.,reaction,pre-labeled: workplace frustration
+Just defended my masters thesis! Data science here I come. So grateful and a little terrified.,reaction,pre-labeled: milestone celebration
+Nobody actually needs a MLOps platform. It is pure vendor hype.,hot_take,"pre-labeled: confident industry claim, unverified"
+"Embedding comparison on 12,000 labeled support tickets: TF-IDF + logistic regression hit 0.82 macro-F1 while a fine-tuned MiniLM got 0.88. GPU inference cost $2.30 per 1k tickets versus effectively zero for TF-IDF.",analysis,cold: gives code-level technique with results
+"Honestly, p-values are just corporate cargo cult. Leadership decides first and then asks us to justify it.",hot_take,pre-labeled: provocative opinion without evidence
+"Benchmarked CatBoost vs a random forest on 2.3M rows with 112 features. 5-fold CV AUC was 0.902 vs 0.853, but inference latency went from 12ms to 55ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: reports benchmark or latency numbers
+"Class imbalance was 1:200 in our fraud set. SMOTE gave PR-AUC 0.35, while simply using class weights and tuning the threshold got 0.39. Calibration (Brier score 0.021) was also better without resampling.",analysis,cold: gives code-level technique with results
+Burnout is real. Fourth week in a row working weekends and nobody even noticed. Feeling pretty defeated.,reaction,"pre-labeled: personal sentiment, no argument"
+"Quick breakdown of our demand forecast model: n=310,000 observations, MAE of 0.87 on a time-based holdout of the last 8 weeks. A seasonal naive baseline got 15.9%, so the gain is real but modest.",analysis,pre-labeled: cites concrete metrics and sample sizes
+"For anyone doing time series CV: use expanding windows, not random k-fold. With 3 folds on 5 years of daily data our random-split RMSE was 4.1 but the walk-forward RMSE was 7.4. The first number was leakage from adjacent days.",analysis,pre-labeled: gives code-level technique with results
+Switching our pandas groupby-apply to a vectorized np.where version cut the feature pipeline from 41 minutes to 90 seconds on 200M rows. Profiling with cProfile showed the apply lambda was 67% of runtime.,analysis,pre-labeled: cites concrete metrics and sample sizes
+"Prediction: causal inference will be the next big skill, and everyone who ignores it is going to get left behind.",hot_take,"pre-labeled: sweeping prediction, no data"
+Unpopular opinion: SQL is dead and anyone still choosing otherwise is kidding themselves.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+"If you are seeing data leakage, check whether you fit your imputer before the train/test split. In our case that alone inflated test F1 from 0.52 to 0.70. Wrapping everything in a sklearn Pipeline fixed it.",analysis,pre-labeled: gives code-level technique with results
+"Honestly, dashboards are useless. Leadership decides first and then asks us to rubber-stamp it.",hot_take,"pre-labeled: sweeping prediction, no data"
+"Cleaning notes: 6.3% of rows had null signup_date. Median imputation vs a iterative imputer changed downstream AUC by 0.011 over 5-fold CV, which is within the fold-to-fold std of 0.009.",analysis,pre-labeled: gives code-level technique with results
+"Cleaning notes: 17% of rows had null income. Median imputation vs a MICE imputer changed downstream AUC by 0.007 over 10-fold CV, which is within the fold-to-fold std of 0.009.",analysis,pre-labeled: cites concrete metrics and sample sizes
+Nobody actually needs a feature store. It is resume-driven development.,hot_take,"pre-labeled: confident industry claim, unverified"
+Hot take: transformers is overkill for the vast majority of business problems and everyone knows logistic regression wins.,hot_take,"pre-labeled: confident industry claim, unverified"
+"We ran an A/B test with 38,000 users per arm over 14 days. Lift in conversion was 1.8% with a p-value of 0.047. Power analysis at 80% needed roughly 74k per arm, so we were underpowered and I would not trust it.",analysis,pre-labeled: describes a reproducible method
+Switching our pandas groupby-apply to a vectorized np.where version cut the feature pipeline from 41 minutes to 11 minutes on 200M rows. Profiling with cProfile showed the apply lambda was 82% of runtime.,analysis,pre-labeled: describes a reproducible method
+"For anyone doing time series CV: use expanding windows, not random k-fold. With 8 folds on 5 years of daily data our random-split RMSE was 3.6 but the walk-forward RMSE was 7.4. The first number was leakage from adjacent days.",analysis,pre-labeled: cites concrete metrics and sample sizes
+"Class imbalance was 3:97 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.41. Calibration (Brier score 0.021) was also better without resampling.",analysis,pre-labeled: reports benchmark or latency numbers
+"Got a 15% raise after switching jobs and honestly I am still in shock. Hang in there everyone, it can happen!",reaction,pre-labeled: milestone celebration
+Finally passed the AWS ML specialty cert today! Feeling amazing after all that of studying.,reaction,"pre-labeled: personal sentiment, no argument"
+"Ran a bootstrap with 10000 resamples to get CIs on the median difference. The 95% interval was [-1.1, 0.7], so it crosses zero and we cannot claim an effect. A t-test would have misled us because the data is heavily right-skewed (skew = 4.7).",analysis,pre-labeled: reports benchmark or latency numbers
+Burnout is real. Third week in a row working weekends and nobody even noticed. Feeling pretty hopeless.,reaction,pre-labeled: emotional job-search vent
+Hit 3 years at my company today and they gave me a mug. Seriously I need a new job.,reaction,pre-labeled: emotional job-search vent
+"Ran a bootstrap with 5000 resamples to get CIs on the median difference. The 95% interval was [-1.1, 0.7], so it excludes zero, which supports the effect. A t-test would have misled us because the data is heavily right-skewed (skew = 2.8).",analysis,pre-labeled: cites concrete metrics and sample sizes
+Leetcode is the best predictor about whether someone can do the job. Companies that use it deserve the hires they get.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+"If you are seeing data leakage, check whether you fit your target encoder before the train/test split. In our case that alone inflated test F1 from 0.52 to 0.70. Wrapping everything in a sklearn Pipeline fixed it.",analysis,pre-labeled: cites concrete metrics and sample sizes
+Statistics is the only real skill in this field. Companies just want people who can ship.,hot_take,"pre-labeled: sweeping prediction, no data"
+"Embedding comparison on 12,000 labeled support tickets: TF-IDF + logistic regression hit 0.76 macro-F1 while a fine-tuned MiniLM got 0.84. GPU inference cost $1.10 per 1k tickets versus effectively zero for TF-IDF.",analysis,pre-labeled: cites concrete metrics and sample sizes
