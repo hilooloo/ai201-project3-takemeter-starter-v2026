@@ -1,0 +1,31 @@
+text,label,note
+The title 'data scientist' will be gone by 2032. It will all be analytics engineer.,hot_take,"pre-labeled: sweeping prediction, no data"
+"We ran an A/B test with 38,000 users per arm over 21 days. Lift in conversion was 1.8% with a p-value of 0.008. Power analysis at 80% needed roughly 9k per arm, so we were adequately powered.",analysis,pre-labeled: describes a reproducible method
+Hit 2 years at my company today and they gave me a sticker. Lol I need a new job.,reaction,pre-labeled: milestone celebration
+Leetcode tells you nothing about whether someone can do the job. Companies that use it deserve the hires they get.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Today my first model went to production and it is actually working. I am so proud of myself.,reaction,pre-labeled: workplace frustration
+Burnout is real. Second week in a row working weekends and nobody even noticed. Feeling pretty defeated.,reaction,"pre-labeled: personal sentiment, no argument"
+Today my third model went to production and it is actually working. I am so happy I could cry lol.,reaction,"cold: personal sentiment, no argument"
+Hit 2 years at my company today and they gave me a handshake. Ha I need a new job.,reaction,pre-labeled: workplace frustration
+Every company that hires a data scientist before a data engineer is doomed. Fight me.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+"Got a 30% raise after switching jobs and honestly I am still in shock. Hang in there everyone, it can happen!",reaction,pre-labeled: emotional job-search vent
+"Embedding comparison on 30,000 labeled support tickets: TF-IDF + logistic regression hit 0.76 macro-F1 while a fine-tuned BERT-base got 0.88. GPU inference cost $1.10 per 1k tickets versus effectively zero for TF-IDF.",analysis,pre-labeled: gives code-level technique with results
+"Cleaning notes: 2.8% of rows had null income. Median imputation vs a iterative imputer changed downstream AUC by 0.003 over 5-fold CV, which is within the fold-to-fold std of 0.006.",analysis,pre-labeled: reports benchmark or latency numbers
+"Class imbalance was 1:45 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.39. Calibration (Brier score 0.021) was also better without resampling.",analysis,pre-labeled: gives code-level technique with results
+Our dbt job was timing out. Repartitioning from 64 to 128 partitions and broadcasting the 300MB lookup table dropped wall-clock from 52 min to 9 min. Shuffle spill went to near zero according to the Spark UI.,analysis,pre-labeled: gives code-level technique with results
+Just defended my masters thesis! Data science here I come. So grateful and a little terrified.,reaction,pre-labeled: milestone celebration
+"Prediction: time series forecasting will be the next big skill, and everyone who ignores it is going to get left behind.",hot_take,"pre-labeled: confident industry claim, unverified"
+Switching our pandas groupby-apply to a vectorized merge + cumsum version cut the feature pipeline from 2.5 hours to 3 minutes on 40M rows. Profiling with cProfile showed the apply lambda was 91% of runtime.,analysis,pre-labeled: cites concrete metrics and sample sizes
+Unpopular opinion: SQL is dead and anyone still choosing otherwise is kidding themselves.,hot_take,pre-labeled: dismisses a tool or role with no benchmark
+Nobody actually needs a data lake. It is a solution looking for a problem.,hot_take,pre-labeled: provocative opinion without evidence
+Burnout is real. Fourth week in a row working weekends and nobody even noticed. Feeling pretty defeated.,reaction,"pre-labeled: personal sentiment, no argument"
+"Prediction: causal inference will be the only valuable skill, and everyone who ignores it is going to get left behind.",hot_take,"cold: confident industry claim, unverified"
+Nobody actually needs a MLOps platform. It is pure vendor hype.,hot_take,"pre-labeled: confident industry claim, unverified"
+"Cleaning notes: 6.3% of rows had null signup_date. Median imputation vs a iterative imputer changed downstream AUC by 0.011 over 5-fold CV, which is within the fold-to-fold std of 0.009.",analysis,pre-labeled: gives code-level technique with results
+"Class imbalance was 3:97 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.41. Calibration (Brier score 0.021) was also better without resampling.",analysis,pre-labeled: reports benchmark or latency numbers
+A bootcamp certificate is the only thing that matters for breaking into data science. Change my mind.,hot_take,"pre-labeled: sweeping prediction, no data"
+Every startup that hires a data scientist before a data engineer is setting itself up to fail. Fight me.,hot_take,cold: provocative opinion without evidence
+"Benchmarked CatBoost vs a 2-layer MLP on 480k rows with 240 features. 5-fold CV AUC was 0.871 vs 0.853, but inference latency went from 9ms to 55ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: describes a reproducible method
+Applied to 400 jobs and got one interviews. This market is brutal and I am so tired.,reaction,pre-labeled: workplace frustration
+"Benchmarked XGBoost vs a random forest on 120k rows with 112 features. 5-fold CV AUC was 0.846 vs 0.880, but inference latency went from 9ms to 38ms per request at p95. Not worth it for our serving budget.",analysis,pre-labeled: gives code-level technique with results
+Burnout is real. Second week in a row working weekends and nobody even noticed. Feeling pretty hopeless.,reaction,pre-labeled: emotional job-search vent
