@@ -41,7 +41,9 @@
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
+## What This Does
 
+This classifier analyzes and categorizes public discussion posts from Reddit's `r/datascience` community. The forum features a heavy mix of rigorous technical advice, provocative unverified career claims, and emotional venting about the job market. The model filters signal from noise by classifying posts into three distinct categories: `analysis` (substantive, evidence-backed arguments), `hot_take` (strong, unsupported claims), and `reaction` (affective, sentiment-driven responses).
 
 
 ---
