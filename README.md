@@ -192,28 +192,28 @@ The +0.200 overall accuracy gap confirms that fine-tuning DistilBERT on domain-s
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.70 | 1.00 | 1.00 | 1.00 | MET |
+| 2. Macro F1 score | ≥ 0.65 | 1.00 | 1.00 | 1.00 | MET |
+| 3. Analysis F1 score | ≥ 0.70 | 1.00 | 1.00 | 1.00 | MET |
+| 4. Hot take recall | ≥ 0.60 | 1.00 | 1.00 | 1.00 | MET |
+| 5. Reaction precision | ≥ 0.65 | 1.00 | 1.00 | 1.00 | MET |
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | analysis | hot_take | reaction |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **analysis** | 10 | 0 | 0 |
+| **hot_take** | 0 | 10 | 0 |
+| **reaction** | 0 | 0 | 10 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
-
+My biggest off-diagonal number is 0 across all three classes, meaning the model made zero classification errors on this held-out test split. However, examining the confidence scores shows that the average prediction confidence is modest (around 0.49 to 0.57), indicating that while the model consistently learned the right boundary decisions, it is not overly overconfident on boundary texts.
 
 
 ---
