@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.8,
+    "f1_macro": 0.7973684210526315,
+    "per_label": {
+      "analysis": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "support": 10
+      },
+      "hot_take": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.7499999999999999,
+        "support": 10
+      },
+      "reaction": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578948,
+        "support": 10
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "The title 'data scientist' will be gone by 2032. It will all be analytics engineer.",
+      "gold": "hot_take",
+      "predicted": "reaction"
+    },
+    {
+      "text": "We ran an A/B test with 38,000 users per arm over 21 days. Lift in conversion was 1.8% with a p-value of 0.008. Power analysis at 80% needed roughly 9k per arm, so we were adequately powered.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Hit 2 years at my company today and they gave me a sticker. Lol I need a new job.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Leetcode tells you nothing about whether someone can do the job. Companies that use it deserve the hires they get.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Today my first model went to production and it is actually working. I am so proud of myself.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Burnout is real. Second week in a row working weekends and nobody even noticed. Feeling pretty defeated.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Today my third model went to production and it is actually working. I am so happy I could cry lol.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Hit 2 years at my company today and they gave me a handshake. Ha I need a new job.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Every company that hires a data scientist before a data engineer is doomed. Fight me.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Got a 30% raise after switching jobs and honestly I am still in shock. Hang in there everyone, it can happen!",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Embedding comparison on 30,000 labeled support tickets: TF-IDF + logistic regression hit 0.76 macro-F1 while a fine-tuned BERT-base got 0.88. GPU inference cost $1.10 per 1k tickets versus effectively zero for TF-IDF.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Cleaning notes: 2.8% of rows had null income. Median imputation vs a iterative imputer changed downstream AUC by 0.003 over 5-fold CV, which is within the fold-to-fold std of 0.006.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Class imbalance was 1:45 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.39. Calibration (Brier score 0.021) was also better without resampling.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Our dbt job was timing out. Repartitioning from 64 to 128 partitions and broadcasting the 300MB lookup table dropped wall-clock from 52 min to 9 min. Shuffle spill went to near zero according to the Spark UI.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Just defended my masters thesis! Data science here I come. So grateful and a little terrified.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Prediction: time series forecasting will be the next big skill, and everyone who ignores it is going to get left behind.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Switching our pandas groupby-apply to a vectorized merge + cumsum version cut the feature pipeline from 2.5 hours to 3 minutes on 40M rows. Profiling with cProfile showed the apply lambda was 91% of runtime.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Unpopular opinion: SQL is dead and anyone still choosing otherwise is kidding themselves.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Nobody actually needs a data lake. It is a solution looking for a problem.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Burnout is real. Fourth week in a row working weekends and nobody even noticed. Feeling pretty defeated.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Prediction: causal inference will be the only valuable skill, and everyone who ignores it is going to get left behind.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Nobody actually needs a MLOps platform. It is pure vendor hype.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Cleaning notes: 6.3% of rows had null signup_date. Median imputation vs a iterative imputer changed downstream AUC by 0.011 over 5-fold CV, which is within the fold-to-fold std of 0.009.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Class imbalance was 3:97 in our fraud set. SMOTE gave PR-AUC 0.28, while simply using class weights and tuning the threshold got 0.41. Calibration (Brier score 0.021) was also better without resampling.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "A bootcamp certificate is the only thing that matters for breaking into data science. Change my mind.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Every startup that hires a data scientist before a data engineer is setting itself up to fail. Fight me.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Benchmarked CatBoost vs a 2-layer MLP on 480k rows with 240 features. 5-fold CV AUC was 0.871 vs 0.853, but inference latency went from 9ms to 55ms per request at p95. Not worth it for our serving budget.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Applied to 400 jobs and got one interviews. This market is brutal and I am so tired.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Benchmarked XGBoost vs a random forest on 120k rows with 112 features. 5-fold CV AUC was 0.846 vs 0.880, but inference latency went from 9ms to 38ms per request at p95. Not worth it for our serving budget.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Burnout is real. Second week in a row working weekends and nobody even noticed. Feeling pretty hopeless.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    }
+  ]
+}
