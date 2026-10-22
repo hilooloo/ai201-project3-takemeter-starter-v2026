@@ -149,6 +149,11 @@ Stratified 70/15/15 split:
 - *What came back:* It suggested technical scenarios incorporating topics like PSI drift thresholds, SHAP background sample sizes, ONNX quantization speedups, and recruiter ghosting frustrations.
 - *What I changed:* I audited every candidate text to ensure natural sentence structure and removed overly formulaic synthetic patterns before labeling.
 
+**Moment 3 (Unit 6 Diagnosis and Evaluation):**
+- *What I asked for:* I consulted an AI assistant to analyze the trade-offs between relabeling data versus adjusting training epochs after observing 100% agreement on the staff dataset and modest model confidence scores.
+- *What came back:* The AI pointed out that because the agreement check showed zero label noise, relabeling was unnecessary, and recommended testing an additional training epoch to evaluate decision margin stability.
+- *What I changed:* I kept the taxonomy and labels intact, updated `epochs` from 3 to 4 with `RUN_LABEL = "after"`, and verified that accuracy held across all three random seeds.
+
 **Pre-labelling disclosure:**
 An AI assistant was used to draft initial candidate classifications for the post-cold batch (rows 21–200). In accordance with the project instructions, the first 20 posts were labeled completely cold by hand (`cold:` in the note column). For the remaining 180 rows, I reviewed and verified every single draft label against the written boundary rules and corrected mismatches by hand (`pre-labeled:` in the note column) prior to final ingestion.
 
@@ -354,13 +359,13 @@ Yes, it helped by maintaining 1.00 accuracy across all three seeds while keeping
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
-
+None of the five target criteria were missed across any of the three seeds; all metrics remained at 1.00. However, retraining stopped at 4 epochs because fine-tuning DistilBERT further on a small 200-post dataset risks overfitting to superficial vocabulary patterns (like specific library names) and degrading generalizability. If extended further with more time, I would collect 50 fresh, unseen posts from related technical subreddits to evaluate out-of-domain robustness instead of increasing epochs.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
 
-
+The confusion matrix shows zero off-diagonal errors across all classes, showing that the model learned the high-level semantic separation between emotional vents and empirical benchmarks. However, the model's moderate prediction confidence (averaging 0.50 to 0.57) indicates it still struggles to feel decisive on boundary posts where subjective complaints are lightly decorated with real metrics.
 
 <!-- ═════════════════════════════════════════════════════════════════════
 
