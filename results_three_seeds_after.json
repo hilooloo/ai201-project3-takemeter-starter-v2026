@@ -42,7 +42,7 @@
       }
     },
     "confidence": {
-      "mean_when_right": 0.5667493939399719,
+      "mean_when_right": 0.6713259816169739,
       "mean_when_wrong": null,
       "accuracy_most_confident_third": 1.0,
       "accuracy_least_confident_third": 1.0,
@@ -96,7 +96,7 @@
       }
     },
     "confidence": {
-      "mean_when_right": 0.49135154485702515,
+      "mean_when_right": 0.5814669132232666,
       "mean_when_wrong": null,
       "accuracy_most_confident_third": 1.0,
       "accuracy_least_confident_third": 1.0,
@@ -150,7 +150,7 @@
       }
     },
     "confidence": {
-      "mean_when_right": 0.5232775211334229,
+      "mean_when_right": 0.6223919987678528,
       "mean_when_wrong": null,
       "accuracy_most_confident_third": 1.0,
       "accuracy_least_confident_third": 1.0,
